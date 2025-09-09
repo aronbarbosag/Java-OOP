@@ -85,7 +85,7 @@ public class Curso {
 	
 	public static void validarAlunos(ArrayList<Aluno> alunos) throws ModelException{
 		if (alunos==null) {
-			throw new ModelException("A referencia a aluno nao pode esta vazia");
+			throw new ModelException("A referencia a aluno nao pode estar vazia");
 		}
 	}
 	
