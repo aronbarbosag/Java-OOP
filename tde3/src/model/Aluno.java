@@ -70,7 +70,7 @@ public class Aluno {
 	
 	public static void validarCurso(Curso curso) throws ModelException{
 		if(curso==null)
-			throw new ModelException("É necessairo que o aluno esteja em um curso ");
+			throw new ModelException("É necessário que o aluno esteja em um curso ");
 	}
 	
 
