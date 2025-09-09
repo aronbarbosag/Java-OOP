@@ -12,8 +12,6 @@ public class ControllerAluno {
     final private CtrlPrograma ctrlPai;
     final private ViewAluno janela;
 
-    ;
-
 //    Passa o controlador pai como argumento
 
     public ControllerAluno(CtrlPrograma c){
