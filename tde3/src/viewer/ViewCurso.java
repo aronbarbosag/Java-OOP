@@ -60,10 +60,6 @@ public class ViewCurso extends JFrame {
 				    JOptionPane.showMessageDialog(btnCriarCurso, "Erro: O ID do curso deve ser um número válido.");
 				}
 
-				
-//				
-				
-				
 			}
 		});
 		contentPane.setLayout(null);
