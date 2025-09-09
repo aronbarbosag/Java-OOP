@@ -3,7 +3,7 @@ import model.Aluno;
 import java.util.ArrayList;
 
 public class DaoAluno {
-	public static ArrayList<Aluno> listaAlunos = new ArrayList<Aluno>();;
+	public static ArrayList<Aluno> listaAlunos = new ArrayList<Aluno>();
 	
 	
 	
