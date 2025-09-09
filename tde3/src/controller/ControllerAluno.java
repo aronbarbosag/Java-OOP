@@ -43,6 +43,7 @@ public class ControllerAluno {
             daoAluno.adicionarAluno(novo);
 
             this.janela.setVisible(false);
+            this.ctrlPai.incluirAlunoFinalizado();
 
         }
         catch(NumberFormatException e1) {
