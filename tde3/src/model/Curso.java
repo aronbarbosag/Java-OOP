@@ -74,7 +74,7 @@ public class Curso {
 	
 	public static void validarAluno(Aluno aluno) throws ModelException{
 		if (aluno==null)
-			throw new ModelException("Aluno nao pdoe estar vazio");
+			throw new ModelException("Aluno nao pode estar vazio");
 	}
 	
 	
