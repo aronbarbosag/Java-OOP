@@ -12,7 +12,6 @@ public class ControllerAluno extends ControllerAbstract{
     final private ViewAluno janela;
 
 
-
 //    Passa o controlador pai como argumento
 
     public ControllerAluno(ControllerAbstract c){
@@ -41,7 +40,9 @@ public class ControllerAluno extends ControllerAbstract{
             daoAluno.adicionarAluno(novo);
 
             this.janela.setVisible(false);
+
             this.incluirAlunoFinalizado();
+
 
         }
         catch(NumberFormatException e1) {
