@@ -7,15 +7,15 @@ import viewer.ViewAluno;
 
 import javax.swing.*;
 
-public class ControllerAluno {
+public class ControllerAluno extends ControllerAbstract{
 //    Controler de caso de uso guarda os controller pai e a view correspondente
-    final private CtrlPrograma ctrlPai;
     final private ViewAluno janela;
+
 
 //    Passa o controlador pai como argumento
 
-    public ControllerAluno(CtrlPrograma c){
-        this.ctrlPai = c;
+    public ControllerAluno(ControllerAbstract c){
+        super(c);
         this.janela =  new ViewAluno(this);
         this.janela.setVisible(true);
 
@@ -25,9 +25,6 @@ public class ControllerAluno {
 
     }
 
-    public CtrlPrograma getCtrlPai(){
-        return  this.ctrlPai;
-    }
 
 
     public void incluirNovoAluno(int matricula, String nome, Curso curso) {
@@ -43,7 +40,9 @@ public class ControllerAluno {
             daoAluno.adicionarAluno(novo);
 
             this.janela.setVisible(false);
-            this.ctrlPai.incluirAlunoFinalizado();
+
+            this.incluirAlunoFinalizado();
+
 
         }
         catch(NumberFormatException e1) {
@@ -59,7 +58,7 @@ public class ControllerAluno {
 
     public void cancelar(){
         this.janela.setVisible(false);
-        this.ctrlPai.incluirAlunoFinalizado();
+        this.incluirAlunoFinalizado();
     }
 
 }

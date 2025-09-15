@@ -90,7 +90,7 @@ public class ViewAluno extends JFrame {
         btnCriarCurso.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ctrlAluno.getCtrlPai().iniciarIncluirCurso();
+                ctrlAluno.iniciarIncluirCurso();
 
             }
         });
