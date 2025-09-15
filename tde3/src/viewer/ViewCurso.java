@@ -23,7 +23,7 @@ public class ViewCurso extends JFrame {
 	private JPanel contentPane;
 	private JTextField tf_id_curso;
 	private JTextField tf_nome_curso;
-	private ControllerCurso ctrlCurso;
+	final private ControllerCurso ctrlCurso;
 	
 	public ViewCurso(ControllerCurso ctrl) {
         this.ctrlCurso = ctrl;
@@ -82,7 +82,8 @@ public class ViewCurso extends JFrame {
 		JButton btCancelar = new JButton("Cancelar");
 		btCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
+				ctrlCurso.cancelar();
+
 			}
 		});
 		btCancelar.setBounds(253, 176, 89, 23);
